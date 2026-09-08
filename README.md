@@ -1,84 +1,63 @@
-# Muhammad Umair Ali
+<p align="center">
+  <img src="./assets/fpga-hero.svg" alt="Animated 3D FPGA hybrid controller" width="100%" />
+</p>
 
-Electrical and Electronics Engineering graduate working in digital design.
-Verilog and FPGAs, power electronics, and the place where the two meet: motor
-control.
+<p align="center">
+  <a href="mailto:umairali33862@gmail.com"><img src="https://img.shields.io/badge/Email-umairali33862%40gmail.com-0d1b2a?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/MeriMerMeri"><img src="https://img.shields.io/badge/GitHub-MeriMerMeri-111827?style=for-the-badge&logo=github" alt="GitHub" /></a>
+</p>
 
-I came to digital design through a lab rather than through a course. Three
-years as an undergraduate lab assistant, debugging other people's circuits and
-building the experiments they were assessed on, is what made me want to design
-the controller instead of the analogue front end around it.
+## ⚡ The mission
 
----
+I build digital control systems for machines that move. My focus is the overlap
+between **Verilog / FPGA design**, **power electronics**, and **motor control**:
+turning physical signals into reliable real-time hardware.
 
-### What I am working on
+```text
+signal → FPGA logic → power stage → motion → feedback
+```
 
-**Approximate computing and quantization in dynamic PWM motor control engines**
-— an ongoing research project in Verilog. The idea is that a motor control loop
-does not need arithmetic that is correct to the last bit: the plant is
-mechanical, it filters, and the feedback path corrects. So I truncate the
-feedback path and use approximate arithmetic in the datapath, then measure what
-that buys in dynamic power and FPGA LUT utilisation, and how far it can be
-pushed before motor stability actually suffers.
+## 🧠 In the lab now
 
-The interesting part is not the saving. It is finding the truncation margin
-where the loop is still stable but the hardware is meaningfully cheaper.
+**Approximate computing for dynamic PWM motor-control engines.** I am testing
+how far feedback-path quantization and approximate arithmetic can reduce FPGA
+area and dynamic power while a mechanical control loop remains stable. The
+interesting engineering question is not merely the saving—it is locating the
+margin where the hardware becomes meaningfully cheaper without compromising
+the plant.
 
----
+## 🛠️ Featured build
 
-### Selected projects
+### [FPGA hybrid vehicle controller](https://github.com/MeriMerMeri/fpga-hybrid-vehicle-controller)
 
-**FPGA-based hybrid vehicle control and regenerative system** — final year
-project. A hybrid powertrain controller written entirely in Verilog on a Xilinx
-Artix-7. Six-step BLDC commutation with dead time insertion, a manual torque
-mode and a closed-loop speed mode, regenerative braking blended against
-friction braking, coulomb-counting state of charge, and arbitration between the
-battery and the engine. Self-checking testbenches for every module plus a
-system-level simulation against a behavioural motor model.
+An Artix-7 Verilog hybrid-powertrain controller with six-step BLDC commutation,
+dead-time insertion, manual torque and closed-loop speed modes, regenerative
+braking, coulomb-counted state of charge, and battery / engine arbitration.
+Every module is backed by self-checking testbenches and a system-level motor
+model.
 
-**Hexabot** — a six-legged biomimetic robot, semester group project. Eighteen
-MG996R servos on a Servo2040 controller with an ESP32. Forward and inverse
-kinematics, dynamic auto-balancing, and micro-switch obstacle detection.
+| Digital control | Energy systems | Engineering stack |
+| :-- | :-- | :-- |
+| Verilog · Vivado · Synopsys DC · Logisim | BLDC control · PWM · regenerative braking · MPPT | C · MATLAB · Proteus · NI Multisim · Arduino · AutoCAD |
 
-**AM transmitter and receiver** — a complete AM chain: LC oscillator carrier
-generator into a Class-C power amplifier, and a receiver with an envelope
-detector, op-amp stage and low-pass filter for audio recovery. Simulated in
-Proteus.
+## 🔩 Other systems I have built
 
-**IoT smart energy monitoring** — Arduino/ESP32 with a cloud dashboard for
-real-time voltage and current, at 95 percent measurement accuracy.
+- **Hexabot** — ESP32 six-legged robot with 18 MG996R servos, kinematics,
+  dynamic auto-balancing, and obstacle detection.
+- **AM transmitter & receiver** — LC carrier oscillator, Class-C power stage,
+  envelope detector, audio amplifier, and low-pass recovery filter.
+- **IoT energy monitor** — Arduino / ESP32 voltage and current telemetry with a
+  cloud dashboard.
+- **Solar MPPT simulation** — PV maximum-power-point tracking modelled and
+  tuned in MATLAB.
 
-**Solar MPPT controller simulation** — maximum power point tracking for a PV
-array, modelled and tuned in MATLAB.
+## 🎓 Background
 
-Also: active low-pass and high-pass filter design verified against measured
-frequency response, audio and power amplifier stages, and BLDC PWM control on
-an Arduino UNO.
+**BSc Electrical & Electronics Engineering** — European University of Lefke
+(CGPA 3.49 / 4.00; Washington Accord degree, MUDEK accredited, HKIE recognised).
 
----
+Three years as an undergraduate lab assistant gave me a practical instinct for
+debugging circuits, building dependable experiments, and helping other people
+make their hardware work.
 
-### Tools
-
-`Verilog` · `Vivado` · `Synopsys Design Compiler` · `Logisim` · `C` ·
-`MATLAB` · `Proteus` · `NI Multisim` · `AutoCAD` · `Arduino`
-
----
-
-### Background
-
-**BSc Electrical and Electronics Engineering**, European University of Lefke —
-CGPA 3.49 / 4.00. Washington Accord degree, MUDEK accredited, HKIE recognised.
-
-**Undergraduate lab assistant**, European University of Lefke — three years
-guiding students through analog, digital and embedded systems experiments, and
-keeping the teaching lab's equipment working.
-
-**Summer training intern**, Cyprus Turkish Electricity Corporation (KIBTEK) —
-power distribution network maintenance, transformer and fuse replacement on
-local grid infrastructure, and troubleshooting underground wiring.
-
----
-
-### Contact
-
-umairali33862@gmail.com
+<p align="center"><sub>Open to conversations about FPGA design, motor control, and embedded energy systems.</sub></p>
