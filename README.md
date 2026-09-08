@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MeriMerMeri/MeriMerMeri/main/assets/fpga-hero.svg" alt="Animated 3D FPGA hybrid controller" width="100%" />
+  <img src="https://raw.githubusercontent.com/MeriMerMeri/MeriMerMeri/a0a74748cab5052e30021ee5b35a66abe5ef33d5/assets/fpga-hero.svg" alt="Animated 3D FPGA hybrid controller" width="100%" />
 </p>
 
 <p align="center">
